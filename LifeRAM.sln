@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeRAM.Core", "LifeRAM.Core\LifeRAM.Core.csproj", "{AF6F2A41-BD5A-40C1-9DA4-913ED0C33B75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeRAM.ConsoleApp", "LifeRAM.ConsoleApp\LifeRAM.ConsoleApp.csproj", "{B774E64B-F7F0-4536-B894-C03E66AD8722}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{AF6F2A41-BD5A-40C1-9DA4-913ED0C33B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF6F2A41-BD5A-40C1-9DA4-913ED0C33B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF6F2A41-BD5A-40C1-9DA4-913ED0C33B75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B774E64B-F7F0-4536-B894-C03E66AD8722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B774E64B-F7F0-4536-B894-C03E66AD8722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B774E64B-F7F0-4536-B894-C03E66AD8722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B774E64B-F7F0-4536-B894-C03E66AD8722}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
