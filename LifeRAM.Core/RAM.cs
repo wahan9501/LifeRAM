@@ -15,7 +15,7 @@ public class RAM
 
 public class RAMDbContext : DbContext
 {
-    public DbSet<RAM>? RAM { get; set; }
+    public DbSet<RAM> RAM { get; set; } = null!;
 
     public RAMDbContext(DbContextOptions<RAMDbContext> options) : base(options)
     {
