@@ -1,10 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using LifeRAM.Core;
+using LifeRAM.Core.Model;
 using Microsoft.EntityFrameworkCore;
 
 using var ramDbContext = new RAMDbContext(new DbContextOptionsBuilder<RAMDbContext>()
-    .UseInMemoryDatabase("InMemoryDatabase")
+    .UseSqlite("Filename=LifeRAM.db")
     .Options);
 
 Console.WriteLine(ramDbContext.RAM.ToList().Count);
@@ -20,10 +21,10 @@ ramDbContext.SaveChanges();
 
 Console.WriteLine(ramDbContext.RAM.ToList().Count);
 
-using var ramDbContext2 = new RAMDbContext(new DbContextOptionsBuilder<RAMDbContext>()
-    .UseInMemoryDatabase("InMemoryDatabase")
-    .Options);
-
-Console.WriteLine(ramDbContext2.RAM.ToList().Count);
-
-Console.WriteLine("Hello, World!");
+// using var ramDbContext2 = new RAMDbContext(new DbContextOptionsBuilder<RAMDbContext>()
+//     .UseInMemoryDatabase("InMemoryDatabase")
+//     .Options);
+//
+// Console.WriteLine(ramDbContext2.RAM.ToList().Count);
+//
+// Console.WriteLine("Hello, World!");
